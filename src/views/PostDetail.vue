@@ -5,7 +5,7 @@ import type { Post } from "@/types/post";
 const route = useRoute();
 const id = route.params.id as string;
 
-const res = await fetch("https://api.oluwasetemi.dev/posts/${id}");
+const res = await fetch(`https://api.oluwasetemi.dev/posts/${id}`);
 const post: Post = await res.json();
 </script>
 
