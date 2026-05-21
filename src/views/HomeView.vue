@@ -27,7 +27,7 @@ try {
         <div
           v-for="post in posts"
           :key="post.id"
-          class="border-b border-gray-800"
+          class="border-b border-gray-700 p-6 rounded transition-transform duration-300 hover:translate-x-2 hover:bg-gray-900 hover:border-gray-500 cursor-pointer"
         >
           <h2 class="text-2xl font-bold text-white mb-4">
             {{ post.title }}
@@ -63,6 +63,11 @@ try {
           </RouterLink>
         </div>
       </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="py-6 text-center text-gray-500 text-sm">
+      &copy; {{ new Date().getFullYear() }} Dev Blog. All rights reserved.
     </div>
   </div>
 </template>
